@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/bio-resume.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px; /* Spacing between buttons */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #6a5acd;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #c357d1;
+    transform: scale(1.1);
+}
+
+/* Profile Photo Styling */
+.profile-photo {
+    text-align: center;
+    margin-top: 60px; /* Reduced gap to compensate for the fixed header */
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Bio Section Styling */
+.bio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    margin-top: -160px;
+}
+
+.container1 {
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container1 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ffdd57;
+}
+
+.container1 h4 {
+    margin-top: 10px;
+    color: #c357d1;
+}
+
+.container1 p {
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .container1 {
+        padding: 20px;
+    }
+
+    header nav ul li a {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
