@@ -226,7 +226,7 @@ function App() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-2xl blur-3xl animate-pulse"></div>
               <div className="relative w-[270px] h-[270px] custom-shape overflow-hidden bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-white/10">
                 <img
-                  src="src/Assets/VasudhaMurthy1.jpg"
+                  src="/src/Assets/VasudhaMurthy1.jpg"
                   alt="Profile"
                   className="object-cover w-full h-full"
                 />
