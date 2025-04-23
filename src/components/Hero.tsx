@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { scroller } from 'react-scroll';
 import Me from '../assets/Me.svg';
 
 export function Hero() {
@@ -31,6 +32,15 @@ export function Hero() {
     return () => clearTimeout(timeout);
   }, [displayText, titleIndex, isDeleting, titles]);
 
+  // Smooth scroll handler for "Get in touch" button
+  const scrollToContact = () => {
+    scroller.scrollTo('contact', {
+      smooth: true,
+      offset: -80, // Adjust this offset to match your navbar height
+      duration: 500,
+    });
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
@@ -52,12 +62,12 @@ export function Hero() {
             </span>{' '}
             at 2 AM. Living the loop of build, break, debug, repeat.
           </p>
-          <a 
-            href="#contact"
-            className="inline-flex px-6 py-2 bg-blue-500 hover:bg-blue-600 rounded-full transition-colors text-white font-medium text-base"
+          <button 
+            onClick={scrollToContact}
+            className="inline-flex px-6 py-2 bg-blue-500 hover:bg-blue-600 rounded-full transition-colors text-white font-medium text-base cursor-pointer"
           >
             Get in touch
-          </a>
+          </button>
         </motion.div>
         <motion.div 
           initial={{ opacity: 0, x: 50 }}
