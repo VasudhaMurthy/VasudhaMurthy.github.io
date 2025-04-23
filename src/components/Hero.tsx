@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import Me from '../assets/Me.svg';
 
 export function Hero() {
   const [displayText, setDisplayText] = useState('');
-  const titles = ['competitive coder', 'python developer', 'an artist'];
+  const titles = ['a competitive coder', 'a python developer', 'an artist'];
   const [titleIndex, setTitleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
@@ -41,7 +42,7 @@ export function Hero() {
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Vasudha A M</h1>
           <div className="flex items-center gap-2 text-xl md:text-2xl mb-4">
-            <span className="text-gray-300">I am a</span>
+            <span className="text-gray-300">I am </span>
             <span className="text-blue-400 font-semibold">{displayText}<span className="animate-blink">|</span></span>
           </div>
           <p className="text-gray-300 text-base md:text-lg mb-6">
@@ -65,7 +66,7 @@ export function Hero() {
           className="md:w-1/2 flex justify-center"
         >
           <img 
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop" 
+            src={Me}
             alt="Profile" 
             className="rounded-full w-72 h-72 object-cover shadow-2xl"
           />

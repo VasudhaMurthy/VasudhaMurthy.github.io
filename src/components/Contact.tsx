@@ -7,31 +7,31 @@ export function Contact() {
     {
       icon: <Mail size={24} className="text-blue-400" />,
       label: "Email",
-      href: "mailto:john@example.com",
+      href: "mailto:vasudha.murthy08@gmail.com",
       color: "hover:bg-red-600"
     },
     {
       icon: <Instagram size={24} className="text-blue-400" />,
       label: "Instagram",
-      href: "https://instagram.com",
+      href: "https://www.instagram.com/vasudha._.murthy/",
       color: "hover:bg-pink-600"
     },
     {
       icon: <Facebook size={24} className="text-blue-400" />,
       label: "Facebook",
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/VasudhaMurthy08",
       color: "hover:bg-blue-600"
     },
     {
       icon: <Linkedin size={24} className="text-blue-400" />,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "http://www.linkedin.com/in/vasudhamurthy",
       color: "hover:bg-blue-700"
     },
     {
       icon: <Github size={24} className="text-blue-400" />,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/VasudhaMurthy",
       color: "hover:bg-gray-700"
     }
   ];
