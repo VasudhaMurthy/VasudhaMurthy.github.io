@@ -14,7 +14,7 @@ import { Section } from './Section';
 export function Projects() {
   const projects = [
     {
-      title: 'EcoTrack',
+      title: 'RegenX',
       description: 'Dynamic Geofencing-Based Waste Management Platform using Flask, PostgreSQL, and Firebase Cloud Messaging. Features real-time tracking, dynamic geofencing, and AI-enabled complaint handling.',
       icon: <Trash2 className="text-green-400" size={32} />,
       features: [
@@ -23,7 +23,7 @@ export function Projects() {
         'AI-enabled complaint handling',
         'Live map visualization'
       ],
-      github: 'https://github.com/vasudhaam/eco-track'
+      // github: 'https://github.com/vasudhaam/eco-track'
     },
     {
       title: 'GoTogether',
@@ -35,7 +35,7 @@ export function Projects() {
         'SmartCar API integration',
         'Secure payment processing'
       ],
-      github: 'https://github.com/vasudhaam/go-together'
+      github: 'https://github.com/vasudhamurthy/GoTogether'
     },
     {
       title: 'CogniChat',
@@ -47,7 +47,7 @@ export function Projects() {
         'Real-time emotion detection',
         'NLP-based optimization'
       ],
-      github: 'https://github.com/vasudhaam/cogni-chat'
+      github: 'https://github.com/VasudhaMurthy/CogniChatAI'
     },
     {
       title: 'PillPal',
@@ -59,7 +59,7 @@ export function Projects() {
         'Async task handling',
         'Input validation'
       ],
-      github: 'https://github.com/vasudhaam/pill-pal'
+      github: 'https://github.com/VasudhaMurthy/PillPal'
     }
   ];
 
